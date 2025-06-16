@@ -10,7 +10,7 @@
       font-family: Arial, sans-serif;
       background-color: #111;
       color: #ffffff;
-      scroll-behavior: smooth; /* Para rolagem suave ao clicar nos links do menu */
+      scroll-behavior: smooth; 
     }
 
     .capa {
@@ -63,7 +63,7 @@
 
     nav {
       display: flex;
-      gap: 15px; /* Reduzido o gap para caber mais itens */
+      gap: 15px; 
       flex-wrap: wrap;
     }
 
@@ -77,7 +77,7 @@
       transition: background-color 0.3s, color 0.3s;
     }
 
-    nav a:hover, nav a.active { /* Estilo para link ativo */
+    nav a:hover, nav a.active { 
         background-color: #111;
         color: #ff6600;
     }
@@ -137,7 +137,7 @@
     .maracuja h3, .maracuja p, .maracuja .modo-preparo { color: #ffd700; }
     .framboesa h3, .framboesa p, .framboesa .modo-preparo { color: #ff3377; }
 
-    /* Estilos para a seção Sobre Nós */
+    
     #sobre-nos {
       padding: 60px 20px;
       background-color: #181818;
@@ -208,7 +208,7 @@
       line-height: 1.5;
     }
     
-    /* Estilos para o Jogo da Memória */
+    
     #jogo-da-memoria {
         padding: 40px 20px;
         background-color: #111;
@@ -225,7 +225,7 @@
         grid-template-columns: repeat(4, 1fr); 
         gap: 15px; 
         justify-content: center;
-        max-width: 600px; /* Reduzido para cartas menores */
+        max-width: 600px; 
         margin: 30px auto 0;
     }
     .card-game {
@@ -315,10 +315,10 @@
         }
     }
 
-    /* Estilos para a Seção Blog */
+    
     #blog {
         padding: 60px 20px;
-        background-color: #1c1c1c; /* Cor de fundo ligeiramente diferente */
+        background-color: #1c1c1c; 
         text-align: center;
     }
     #blog h2 {
@@ -335,7 +335,7 @@
     .blog-post-item {
         background-color: #222;
         border-radius: 10px;
-        width: 320px; /* Largura dos posts */
+        width: 320px; 
         padding: 20px;
         text-align: left;
         box-shadow: 0 0 10px rgba(0,0,0,0.4);
@@ -347,7 +347,7 @@
     }
     .blog-post-item img {
         width: 100%;
-        height: 180px; /* Altura fixa para imagem do post */
+        height: 180px; 
         object-fit: cover;
         border-radius: 8px;
         margin-bottom: 15px;
@@ -358,7 +358,7 @@
         margin-top: 0;
         margin-bottom: 10px;
     }
-    .blog-post-item .post-meta { /* Para data ou categoria */
+    .blog-post-item .post-meta { 
         font-size: 0.85em;
         color: #aaa;
         margin-bottom: 10px;
@@ -368,13 +368,12 @@
         color: #ccc;
         line-height: 1.6;
         margin-bottom: 15px;
-        /* Limitar o número de linhas do excerto (opcional, requer mais CSS ou JS) */
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;  
         overflow: hidden;
         text-overflow: ellipsis;
-        min-height: calc(1em * 1.6 * 3); /* Altura mínima para 3 linhas */
+        min-height: calc(1em * 1.6 * 3); 
     }
     .blog-post-item .read-more-btn {
         display: inline-block;
@@ -420,7 +419,49 @@
         font-size: 0.9em;
         color: #aaa;
     }
-  </style>
+    
+    /* começo */
+    .section-container {
+            background-color: #e96b03;
+            margin: 30px auto;
+            padding: 80px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .section-container h2 {
+            color: #000000;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        /* Estilos do botão com a logo de fundo */
+        .logo-background-button {
+            display: inline-block; /* Permite que padding e width/height funcionem */
+            width: 180px; /* Largura do botão */
+            height: 80px; /* Altura do botão */
+            background-image: url('https://eldourado.netlify.app/img/eldouradooriginalogo.jpg'); /* **IMPORTANTE: Insira o caminho da sua logo aqui** */
+            background-size: contain; /* Ajusta a imagem para caber sem cortar */
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            background-position: center; /* Centraliza a imagem no botão */
+            text-indent: -9999px; /* Esconde o texto "Visite o Site" visualmente */
+            overflow: hidden; /* Garante que o texto escondido não seja visível */
+            border: 2px solid #000000; /* Borda leve para definir o botão */
+            border-radius: 8px; /* Cantos arredondados */
+            transition: all 0.3s ease; /* Transição suave para efeitos de hover */
+            cursor: pointer; /* Indica que é clicável */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-background-button:hover {
+            border-color: #007bff; /* Borda azul no hover */
+            transform: translateY(-3px); /* Leve levantada no hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+        }
+   </style>
+  
 </head>
 <body>
   <div class="capa">
@@ -434,21 +475,22 @@
     </div>
 
     <br><br><br>
-
+    
     <nav>
-      <a href="#capa-link">Início</a> <!-- Adicionado ID para link -->
+      <a href="#capa-link">Início</a> 
       <a href="#sabores">Sabores</a>
       <a href="#sobre-nos">Sobre Nós</a>
-      <a href="#blog">Blog</a> <!-- Link para o Blog adicionado -->
+      <a href="#blog">Blog</a> 
       <a href="#jogo-da-memoria">Diversão</a>
       <a href="#contato">Contato</a>
+      <a href="#parceiros">Parceiros</a>
     </nav>
   </header>
-  <div id="capa-link"></div> <!-- Elemento âncora para o link "Início" -->
+  <div id="capa-link"></div> 
 
 
   <div class="container" id="sabores">
-    <!-- Sabores -->
+   
     <div class="produto laranja">
       <img src="laranja.jpeg" alt="Suco de Laranja" />
       <h3>Laranja</h3>
@@ -534,7 +576,7 @@
     </div>
   </section>
 
-  <!-- SEÇÃO BLOG ADICIONADA ABAIXO -->
+  
   <section id="blog">
 
     <h2>Nosso Blog Power Frut</h2>
@@ -573,7 +615,7 @@
      
     </div>
   </section>
-  <!-- FIM DA SEÇÃO BLOG -->
+ 
 
   <section id="jogo-da-memoria">
     <h2>Jogo da Memória das Frutas</h2>
@@ -581,7 +623,7 @@
   </section>
 
 <script>
-  // Script do Jogo da Memória (mantido como na versão anterior)
+  
   const frutasImagens = [ 
     'laranja.jpeg', 'morango.jpeg', 'abacaxi.jpeg', 'uva.jpeg',
     'limão.jpeg', 'manga.jpeg', 'framboesa.jpeg', 'maracuja.jpeg'
@@ -708,7 +750,7 @@
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
-      if (pageYOffset >= (sectionTop - sectionHeight / 3)) { // Ajuste o offset conforme necessário
+      if (pageYOffset >= (sectionTop - sectionHeight / 3)) { 
         current = section.getAttribute('id');
       }
     });
@@ -719,7 +761,7 @@
         link.classList.add('active');
       }
     });
-    // Caso especial para o link "Início" quando no topo
+    
     if (pageYOffset < sections[0].offsetTop - sections[0].clientHeight / 3) {
         navLinks.forEach(link => link.classList.remove('active'));
         document.querySelector('nav a[href="#capa-link"]').classList.add('active');
@@ -728,6 +770,17 @@
   });
 
 </script>
+
+      <div class="section-container" id="parceiros">
+        <h2>Conheça também nosso Parceiro!</h2>
+        <p>Estamos orgulhosos de apresentar nosso parceiro oficial, El dourado! Juntos, buscamos oferecer as melhores experiências e serviços para vocês.</p>
+
+        <a href="https://eldourado.netlify.app/" target="_blank" class="logo-background-button">
+            Visite o Site
+        </a>
+
+        <p style="margin-top: 30px; font-size: 1.5em; color: #000000;">Visite o site, clicando no botão acima.</p>
+     </div>
 
   <footer id="contato">
     <h2>Fale com a gente!</h2>
